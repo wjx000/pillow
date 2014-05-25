@@ -1,0 +1,19 @@
+{
+  "name": "pillow",
+  "version": "1.0.5",
+  "description": "a canvas framework",
+  "author": "xdf",
+  "email": "xudafeng[at]126.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xudafeng/pillow.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "bugs": {
+    "url": "https://github.com/xudafeng/pillow/issues"
+  },
+  "homepage": "https://xudafeng.github.com/pillow",
+  "license": "MIT"
+}
