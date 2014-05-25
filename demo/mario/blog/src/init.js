@@ -17,8 +17,10 @@
     var Mario = global.Mario;
     var math = P.Math;
     var Graphics = P.Graphics;
+    var HEAD = document.head || document.getElementsByTagName('head')[0] || document.documentElement;
     function XDFsBlog(){
         var that = this;
+        that.cnzz();
         if(!document.createElement("canvas").getContext){
             return;
         }
@@ -244,6 +246,13 @@
             });
             global.addEventListener('resize',function(){
             });
+        },
+        cnzz:function(){
+            var that = this;
+            var node = document.createElement('script');
+            node.src = 'http://s4.cnzz.com/stat.php?id=1642323&web_id=1642323';
+            node.async = true;
+            HEAD.insertBefore(node, HEAD.firstChild);
         }
     };
     Util.augment(XDFsBlog,proto);
