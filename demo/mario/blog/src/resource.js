@@ -53,7 +53,7 @@
         for(var y=0;y<4;y++){
             addSource({
                 id:'meadow'+y+x,
-                src:'meadow-'+y+x
+                src:'meadow-'+y+x+'.png'
             });
         }
     }
