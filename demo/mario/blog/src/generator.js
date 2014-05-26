@@ -24,7 +24,6 @@
             that.createPipe();
             that.createBlock();
             that.matrix = MATRIX;
-            console.log(that.matrix)
             that.map = new Map({
                 matrix:that.matrix,
                 size:{
