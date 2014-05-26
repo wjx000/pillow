@@ -1,0 +1,68 @@
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#content{
+    position: absolute;
+    left: 50%;
+    margin-left: -495px;
+    top: 50%;
+    margin-top:-225px;
+    width: 990px;
+    height: 450px;
+    opacity: 0.8;
+    padding: 10px 20px;
+    background: white;
+    border: 2px solid #999;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #8B8B8B;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    line-height: 1.8;
+    font: 14px/1.5 Arial,"Rosario", "Xin Gothic", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+}
+#content h1{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #CCC;
+    color: black;
+    cursor:default;
+}
+#content p{
+    padding:10px;
+}
+#screen{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+#wrap{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+#community{
+    width:200px;
+    height:40px;
+    padding:0px 20px;
+}
+#community a{
+    display:block;
+    width:32px;
+    height:32px;
+    float:left;
+    margin-right:10px;
+    background:url(resource/icon.png) no-repeat;
+    background:url(resource/icon_32.png) no-repeat\9;
+    background-size: auto 32px;
+}
+#community .weibo{
+    background-position:-32px 0px;
+}
+#community .github{
+    background-position:-65px 0px;
+}
