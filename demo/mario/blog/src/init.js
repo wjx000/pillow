@@ -17,8 +17,10 @@
     var Mario = global.Mario;
     var math = P.Math;
     var Graphics = P.Graphics;
+    var HEAD = document.head || document.getElementsByTagName('head')[0] || document.documentElement;
     function XDFsBlog(){
         var that = this;
+        that.cnzz();
         if(!document.createElement("canvas").getContext){
             return;
         }
@@ -45,7 +47,6 @@
                 that.initCloud(e);
                 that.initMario(e);
                 that.initMask();
-                that.initBlog();
                 that.bind();
                 that.start();
             });
@@ -221,22 +222,6 @@
             container.append(mask);
             that.screen.append(container);
         },
-        initBlog:function(){
-            var that = this;
-            return
-            var container = new RenderObjectModel({
-                x:0,
-                y:0,
-                width:CONFIG['SCREENWIDTH']-100,
-                height:CONFIG['SCREENHEIGHT']-100
-            });
-            var inner = new Graphics({
-                fillStyle:'rgba(255, 255, 255, 0.6)'
-            });
-            inner.rect(50,50,CONFIG['SCREENWIDTH']-100,CONFIG['SCREENHEIGHT']-100);
-            container.append(inner);
-            that.screen.append(container);
-        },
         bind:function(){
             var that = this;
             new Mouse({
@@ -244,6 +229,13 @@
             });
             global.addEventListener('resize',function(){
             });
+        },
+        cnzz:function(){
+            var that = this;
+            var node = document.createElement('script');
+            node.src = 'http://s4.cnzz.com/stat.php?id=1642323&web_id=1642323';
+            node.async = true;
+            HEAD.insertBefore(node, HEAD.firstChild);
         }
     };
     Util.augment(XDFsBlog,proto);
