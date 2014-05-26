@@ -9,6 +9,8 @@
             var currentFrame = that.getCurrentFrame?that.getCurrentFrame():null;
             var x = currentFrame?currentFrame.x:that.x;
             var y = currentFrame?currentFrame.y:that.y;
+            that.width = Math.min(1, Math.floor(that.width));
+            that.height = Math.min(1, Math.floor(that.height));
             that.context.drawImage(that.image,x,y,that.width,that.height,0,0,that.width,that.height);
         }
     }
