@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    background:#303030;
+}
+.container {
+    width:800px;
+    margin:0 auto;
+    margin-top:100px;
+}
+#canvas {
+    opacity:1
+}
