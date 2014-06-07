@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container {
+    width:100%;
+}
+
+.container > * {
+    display:block;
+    margin:50px auto;
+}
+/* tutorial styles */
+#canvas {
+    border:1px solid #eee;
+    background:#fff;
+    position:relative;
+}
